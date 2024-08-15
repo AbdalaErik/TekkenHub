@@ -1,0 +1,70 @@
+/*
+Rascunho:
+
+body {
+  background: url('images/edited.gif') rgba(0, 0, 0, 0.3);
+  background-blend-mode: multiply;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+*/
+
+@font-face {
+    font-family: 'TekkenFont';
+    src: URL('../fonts/tarrgetital.ttf') format('truetype');
+}
+
+#myVideo {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1; /* Mantém o vídeo atrás de outros elementos */
+    object-fit: cover; /* Faz com que o vídeo cubra todo o contêiner */
+}
+
+@media (max-width: 768px) {
+    #myVideo {
+        width: 100%; /* Define a largura como 100% */
+        height: auto; /* Define a altura como automática */
+        object-fit: cover; /* Faz com que o vídeo cubra todo o contêiner */
+        object-position: 81% center; /* Ajusta a posição horizontalmente */
+    }
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Cor e opacidade do overlay */
+    z-index: 1; /* Coloca o overlay na frente do vídeo */
+}
+
+.navbar {
+    position: relative; /* Define a posição da barra de navegação como relativa */
+    z-index: 2; /* Coloca a barra de navegação na frente do overlay */
+}
+
+@media(max-width: 991px) {
+    .sidebar{
+        background-color: rgba(255, 255, 255, 0.15) !important;
+        backdrop-filter: blur(10px);
+    }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+.noto-sans-titulo {
+  /* font-family: "Noto Sans", sans-serif; */
+  font-family: "TekkenFont";
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
