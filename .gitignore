@@ -1,2 +1,5 @@
 .venv
 .env
+app/migrations
+!app/migrations/__init__.py
+!app/migrations/__pycache__/__init__.cpython-311.pyc
