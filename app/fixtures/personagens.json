@@ -1,0 +1,16 @@
+[
+    {
+      "model": "app.Personagem",
+      "pk": 1,
+      "fields": {
+        "nome": "Jin Kazama",
+        "titulo": "Teste",
+        "imagem": "https://preview.redd.it/what-are-your-thoughts-on-jin-kazama-v0-2fy6658nbqeb1.jpg?auto=webp&s=0715f54f409413fe971f875190815933102fc005",
+        "estilo": "teste",
+        "pais": "teste123",
+        "dlc": false,
+        "resumo": "teste123",
+        "guias": "teste123"
+      }
+    }
+  ]

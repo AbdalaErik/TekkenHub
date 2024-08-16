@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+@font-face {
+    font-family: 'TekkenFont';
+    src: URL('../fonts/tarrgetital.ttf') format('truetype');
+}
+
+.logo-title {
+    font-family: "TekkenFont";
+}
+
+.title-color-a {
+    color: white;
+}
+
+.title-color-b {
+    color: #ed1665;
+}
+
+.main-logo-section {
+    font-size: 1.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-button {
+    background-color: #ed1665;
+}
+
+.navbar-color {
+    background-color: currentColor;
+}
+
+.navbar {
+    position: relative; /* Define a posição da barra de navegação como relativa */
+    z-index: 2; /* Coloca a barra de navegação na frente do overlay */
+}
+
+@media(max-width: 991px) {
+    .sidebar{
+        background-color: rgba(255, 255, 255, 0.15) !important;
+        backdrop-filter: blur(10px);
+    }
+}
+
+.dynamic-font-size {
+    font-size: calc(1.18rem + .3vw) !important;
+}
+
+@media (min-width: 1200px) {
+    .dynamic-font-size {
+        font-size: 1.5rem !important;
+    }
+}
+
+@media (min-width: 992px) {
+    .dynamic-container {
+        max-width: 990px !important;
+        margin: auto !important;
+    }
+}
+
+@media (min-width: 1200px) {
+    .dynamic-container {
+        max-width: 1140px !important;
+        margin: auto !important;
+    }
+}

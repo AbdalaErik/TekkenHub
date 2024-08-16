@@ -1,0 +1,10 @@
+[
+    {
+      "model": "app.Mapa",
+      "pk": 1,
+      "fields": {
+        "nome": "Yakushima",
+        "imagem": "https://www.reddit.com/media?url=https%3A%2F%2Fpreview.redd.it%2Fnew-tekken-8-stage-preview-images-available-during-cnt-v0-qsdml4ec905b1.jpg%3Fwidth%3D1920%26format%3Dpjpg%26auto%3Dwebp%26s%3Dea9d19c9371caa9245bc6e277afcedd09f87ca55"
+      }
+    }
+]

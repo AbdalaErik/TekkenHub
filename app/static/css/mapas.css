@@ -1,0 +1,16 @@
+.main-section {
+    display: flex;
+    margin-top: 40px;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 80%;
+}
+
+.d-flex {
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+}
