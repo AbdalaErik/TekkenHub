@@ -14,25 +14,23 @@
     <body class="vh-100 overflow-hidden">
         {% include 'navbar.html' %}
         <main>
-            <section class="overlay w-100 vh-100 d-flex flex-columnjustify-content-center align-items-center text-white fs-1" style="background-color: darkgrey;">
-                <h2>Mapas</h2>
+            <section class="overlay w-100 vh-100 d-flex flex-columnjustify-content-center align-items-center text-white fs-1" style="height: 92dvh !important;">
+                <h2 class="page-title">Mapas</h2>
                 <div class="main-section">
                     {% for Mapa in mapas %}
-                    <div style="display: flex;">
-                        <img src="{{Mapa.imagem}}" alt="Map" width="240px">
-                        <div>
-                            <h3>{{Mapa.nome}}</h3>
-                            <ul>
-                                {% for mecanica in Mapa.mecanica %}
-                                    <li>
-                                        <strong>{{ mecanica.nome }}</strong>
-                                        <img src="{{ mecanica.imagem }}" alt="{{ mecanica.nome }}">
-                                        <p>{{ mecanica.descricao }}</p>
-                                    </li>
+                    <div class="mapa-section">
+                        <div class="img-details">
+                            <img src="{{Mapa.imagem}}" alt="Map" width="240px">
+                        </div>
+                        <div class="mapa-details">
+                            <h3 class="title">{{Mapa.nome}}</h3>
+                            <div>
+                                {% for mecanica in Mapa.mecanicas.all %}
+                                    <img src="{{ mecanica.imagem }}" alt="{{ mecanica.nome }}" width="35px">
                                 {% empty %}
-                                    <li>Sem mecânicas associadas.</li>
+                                    <a>Sem mecânicas associadas.</a>
                                 {% endfor %}
-                            </ul>
+                            </div>
                         </div>
                     </div>
                     {% endfor %} 

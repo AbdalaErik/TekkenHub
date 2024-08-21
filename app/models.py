@@ -53,7 +53,7 @@ class Golpe(models.Model):
     dano = models.PositiveIntegerField(verbose_name="Dano")
     frame_start = models.IntegerField(verbose_name="Frames de início")
     frame_block = models.IntegerField(verbose_name="Frames de bloqueio")
-    mecanica = models.ManyToManyField(Mecanica, verbose_name="Mecânica")
+    mecanicas = models.ManyToManyField(Mecanica, verbose_name="Mecânica")
     personagem = models.ForeignKey(Personagem, on_delete=models.CASCADE, verbose_name="Personagem")
 
     class Meta:
@@ -118,7 +118,7 @@ class Mapa(models.Model):
 
     nome = models.CharField(max_length=80, verbose_name="Nome")
     imagem = models.CharField(max_length=300, verbose_name="Imagem")
-    mecanica = models.ManyToManyField(Mecanica, verbose_name="Mecânica")
+    mecanicas = models.ManyToManyField(Mecanica, verbose_name="Mecânica")
 
     class Meta:
         verbose_name = "Mapa"
