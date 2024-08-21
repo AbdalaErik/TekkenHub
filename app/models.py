@@ -6,13 +6,12 @@ from django.contrib.postgres.fields import ArrayField
 class Personagem(models.Model):
 
     nome = models.CharField(max_length=80, verbose_name="Nome")
-    titulo = models.CharField(max_length=80, verbose_name="Título")
     imagem = models.CharField(max_length=300, verbose_name="Imagem")
+    titulo = models.CharField(max_length=80, verbose_name="Título")
     estilo = models.CharField(max_length=80, verbose_name="Estilo de luta")
     pais = models.CharField(max_length=40, verbose_name="País")
+    chart = models.CharField(max_length=300, verbose_name="Chart")
     dlc = models.BooleanField(verbose_name="É DLC?")
-    resumo = models.CharField(max_length=120, verbose_name="Resumo")
-    guias = models.CharField(max_length=400, verbose_name="Guias")
 
     class Meta:
         verbose_name = "Personagem"
@@ -49,13 +48,12 @@ class Mecanica(models.Model):
 class Golpe(models.Model):
 
     nome = models.CharField(max_length=80, verbose_name="Nome")
-    imagens = ArrayField(models.CharField(max_length=300), verbose_name="Imagens")
     notacao = models.CharField(max_length=100, verbose_name="Notação")
+    estrutura = ArrayField(models.CharField(max_length=300), verbose_name="Estrutura")
     dano = models.PositiveIntegerField(verbose_name="Dano")
-    punicao = models.BooleanField(verbose_name="É punição?")
     frame_start = models.IntegerField(verbose_name="Frames de início")
     frame_block = models.IntegerField(verbose_name="Frames de bloqueio")
-    mecanica = models.ForeignKey(Mecanica, on_delete=models.CASCADE, verbose_name="Mecânica")
+    mecanica = models.ManyToManyField(Mecanica, verbose_name="Mecânica")
     personagem = models.ForeignKey(Personagem, on_delete=models.CASCADE, verbose_name="Personagem")
 
     class Meta:
@@ -78,11 +76,10 @@ class DificuldadeCombo(models.Model):
     
 class Combo(models.Model):
 
-    imagens = ArrayField(models.CharField(max_length=120), verbose_name="Imagens")
     notacao = models.CharField(max_length=100, verbose_name="Notação")
-    dificuldade = models.ForeignKey(DificuldadeCombo, on_delete=models.CASCADE, verbose_name="Dificuldade")
-    numero_golpes = models.PositiveIntegerField(verbose_name="Número de golpes")
+    imagem = models.CharField(max_length=300, verbose_name="Imagem")
     dano = models.PositiveIntegerField(verbose_name="Dano")
+    dificuldade = models.ForeignKey(DificuldadeCombo, on_delete=models.CASCADE, verbose_name="Dificuldade")
     personagem = models.ForeignKey(Personagem, on_delete=models.CASCADE, verbose_name="Personagem")
 
     class Meta:
@@ -95,6 +92,7 @@ class Combo(models.Model):
 class JogadorProfissional(models.Model):
 
     nome = models.CharField(max_length=80, verbose_name="Nome")
+    youtube = models.CharField(max_length=300, verbose_name="Nome")
     personagem = models.ForeignKey(Personagem, on_delete=models.CASCADE, verbose_name="Personagem")
 
     class Meta:
@@ -120,6 +118,7 @@ class Mapa(models.Model):
 
     nome = models.CharField(max_length=80, verbose_name="Nome")
     imagem = models.CharField(max_length=300, verbose_name="Imagem")
+    mecanica = models.ManyToManyField(Mecanica, verbose_name="Mecânica")
 
     class Meta:
         verbose_name = "Mapa"

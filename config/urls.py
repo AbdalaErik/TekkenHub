@@ -26,7 +26,7 @@ urlpatterns = [
     path("personagens/", PersonagemListView.as_view(), name = 'personagemList'),
     path("personagens/<int:pk>/", PersonagemDetailView.as_view(), name = 'personagemDetail'),
     path("mecanicas/", MecanicaView.as_view(), name = 'mecanicas'),
-    path("glossario/", TermoView.as_view(), name = 'glossario'),
+    path("terminologia/", TermoView.as_view(), name = 'terminologia'),
     path("mapas/", MapaView.as_view(), name = 'mapas'),
     path("patch_notes/", PatchNoteView.as_view(), name = 'patch_notes'),
     path("sobre/", TemplateView.as_view(template_name = 'sobre.html'), name = 'sobre')

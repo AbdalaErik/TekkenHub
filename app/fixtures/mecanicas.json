@@ -1,0 +1,62 @@
+[
+    {
+        "model": "app.Mecanica",
+        "pk": 1,
+        "fields": {
+            "nome": "Walls",
+            "imagem": "https://static.wikia.nocookie.net/tekken/images/a/ab/Wall_Gimmick.png/revision/latest?cb=20220209093429&path-prefix=en",
+            "descricao": "Mapa com paredes.",
+            "tipo_de_mecanica": 2
+        }
+    },
+    {
+        "model": "app.Mecanica",
+        "pk": 2,
+        "fields": {
+            "nome": "Wall break",
+            "imagem": "https://static.wikia.nocookie.net/tekken/images/b/b7/Wall_Break_Gimmick.png/revision/latest?cb=20220209093530&path-prefix=en",
+            "descricao": "Mapas em que é possível quebrar as paredes.",
+            "tipo_de_mecanica": 2
+        }
+    },
+    {
+        "model": "app.Mecanica",
+        "pk": 3,
+        "fields": {
+            "nome": "Floor break",
+            "imagem": "https://static.wikia.nocookie.net/tekken/images/5/51/Floor_Break_Gimmick.png/revision/latest?cb=20220209093605&path-prefix=en",
+            "descricao": "Mapas em que é possível quebrar o chão.",
+            "tipo_de_mecanica": 2
+        }
+    },
+    {
+        "model": "app.Mecanica",
+        "pk": 4,
+        "fields": {
+            "nome": "Balcony break",
+            "imagem": "https://static.wikia.nocookie.net/tekken/images/8/8e/Wall_Balcony_Break_Gimmick.png/revision/latest?cb=20220209093700&path-prefix=en",
+            "descricao": "Mapas em que é possível quebrar as bancadas.",
+            "tipo_de_mecanica": 2
+        }
+    },
+    {
+        "model": "app.Mecanica",
+        "pk": 5,
+        "fields": {
+            "nome": "Wall bound",
+            "imagem": "https://static.wikia.nocookie.net/tekken/images/6/66/Wall_Bounce_Gimmick.png/revision/latest?cb=20240726195808&path-prefix=en",
+            "descricao": "Mapas em que é possível ricochetear nas paredes.",
+            "tipo_de_mecanica": 2
+        }
+    },
+    {
+        "model": "app.Mecanica",
+        "pk": 6,
+        "fields": {
+            "nome": "Floor bound",
+            "imagem": "https://static.wikia.nocookie.net/tekken/images/b/bf/Floor_Blast_Gimmick.png/revision/latest?cb=20240726200149&path-prefix=en",
+            "descricao": "Mapas em que é possível ricochetear nas paredes.",
+            "tipo_de_mecanica": 2
+        }
+    }
+]

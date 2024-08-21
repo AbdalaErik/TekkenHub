@@ -1,0 +1,16 @@
+[
+  {
+    "model": "app.TipoMecanica",
+    "pk": 1,
+    "fields": {
+      "nome": "Personagem"
+    }
+  },
+  {
+    "model": "app.TipoMecanica",
+    "pk": 2,
+    "fields": {
+      "nome": "Mapa"
+    }
+  }
+]
