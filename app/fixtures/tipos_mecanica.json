@@ -1,0 +1,23 @@
+[
+    {
+        "model": "app.TipoMecanica",
+        "pk": 1,
+        "fields": {
+            "nome": "Jogo"
+        }
+    },
+    {
+        "model": "app.TipoMecanica",
+        "pk": 2,
+        "fields": {
+            "nome": "Mapa"
+        }
+    },
+    {
+        "model": "app.TipoMecanica",
+        "pk": 3,
+        "fields": {
+            "nome": "Golpe"
+        }
+    }
+]

@@ -67,3 +67,15 @@
         margin: auto !important;
     }
 }
+
+.custom-navbar-color {
+    background-color: rgba(0, 0, 0, 0.85) !important;
+}
+
+.navbar-nav .nav-link.active {
+    font-weight: bold !important;
+}
+
+.nav-link:hover {
+    color: white !important;
+}

@@ -1,16 +1,28 @@
 [
     {
-      "model": "app.Personagem",
-      "pk": 1,
-      "fields": {
-        "nome": "Jin Kazama",
-        "titulo": "Teste",
-        "imagem": "https://preview.redd.it/what-are-your-thoughts-on-jin-kazama-v0-2fy6658nbqeb1.jpg?auto=webp&s=0715f54f409413fe971f875190815933102fc005",
-        "estilo": "teste",
-        "pais": "teste123",
-        "dlc": false,
-        "resumo": "teste123",
-        "guias": "teste123"
-      }
+        "model": "app.Personagem",
+        "pk": 1,
+        "fields": {
+            "nome": "Jin Kazama",
+            "imagem": "https://media.graphassets.com/kt0c29OnS1iid1N0bisb",
+            "titulo": "Teste",
+            "estilo": "teste",
+            "pais": "teste123",
+            "chart": "teste123",
+            "dlc": false
+        }
+    },
+    {
+        "model": "app.Personagem",
+        "pk": 2,
+        "fields": {
+            "nome": "Kazuya Mishima",
+            "imagem": "https://media.graphassets.com/pV8nXDdUSoWz68S6bemw",
+            "titulo": "Teste",
+            "estilo": "teste",
+            "pais": "teste123",
+            "chart": "teste123",
+            "dlc": false
+        }
     }
-  ]
+]

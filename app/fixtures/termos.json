@@ -1,0 +1,58 @@
+[
+    {
+        "model": "app.Termo",
+        "pk": 1,
+        "fields": {
+            "nome": "Backdash",
+            "descricao": "O backdash é uma técnica fundamental de movimento em Tekken, usada para criar distância entre o jogador e o oponente rapidamente. Para realizar um backdash, o jogador geralmente precisa pressionar o botão de movimento para trás duas vezes."
+        }
+    },
+    {
+        "model": "app.Termo",
+        "pk": 2,
+        "fields": {
+            "nome": "Korean Backdash",
+            "descricao": "O Korean Backdash é uma versão avançada do backdash, conhecida por sua eficácia superior em criar distância e por ser uma técnica mais avançada que requer precisão e prática para dominar."
+        }
+    },
+    {
+        "model": "app.Termo",
+        "pk": 3,
+        "fields": {
+            "nome": "Combos",
+            "descricao": "Combos são sequências mais complexas e devastadoras de golpes."
+        }
+    },
+    {
+        "model": "app.Termo",
+        "pk": 4,
+        "fields": {
+            "nome": "Juggles",
+            "descricao": "Juggles são combos que mantêm o oponente no ar para continuar atacando."
+        }
+    },
+    {
+        "model": "app.Termo",
+        "pk": 5,
+        "fields": {
+            "nome": "Wall Combos",
+            "descricao": "Wall Combos são combos que aproveitam a interação com as paredes do cenário para infligir dano extra."
+        }
+    },
+    {
+        "model": "app.Termo",
+        "pk": 6,
+        "fields": {
+            "nome": "Power Crushes",
+            "descricao": "Power Crushes permitem ao jogador ignorar alguns dos ataques do adversário, mas ainda recebendo o dano."
+        }
+    },
+    {
+        "model": "app.Termo",
+        "pk": 7,
+        "fields": {
+            "nome": "Heat",
+            "descricao": "Introduzido no Tekken 8, o sistema de Heat adiciona uma nova camada de estratégia. Durante um combate, os jogadores podem ativar o modo Heat, que amplifica o poder de ataque e proporciona novos combos e movimentos."
+        }
+    }
+]

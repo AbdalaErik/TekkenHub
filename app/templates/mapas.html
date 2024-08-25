@@ -20,15 +20,13 @@
                     {% for Mapa in mapas %}
                     <div class="mapa-section">
                         <div class="img-details">
-                            <img src="{{Mapa.imagem}}" alt="Map" width="240px">
+                            <img src="{{Mapa.imagem}}" alt="Map" width="240px" height="145px">
                         </div>
                         <div class="mapa-details">
-                            <h3 class="title">{{Mapa.nome}}</h3>
-                            <div>
+                            <h3 class="title">{{Mapa.nome | upper}}</h3>
+                            <div style="text-align: center;">
                                 {% for mecanica in Mapa.mecanicas.all %}
                                     <img src="{{ mecanica.imagem }}" alt="{{ mecanica.nome }}" width="35px">
-                                {% empty %}
-                                    <a>Sem mecânicas associadas.</a>
                                 {% endfor %}
                             </div>
                         </div>

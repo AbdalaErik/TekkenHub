@@ -1,0 +1,74 @@
+[
+    {
+        "model": "app.PatchNote",
+        "pk": 1,
+        "fields": {
+            "versao": "v1.01.04",
+            "data": "2024-02-07",
+            "link": "https://www.bandainamcoent.com/news/tekken-8-patch-notes-v1-01-04"
+        }
+    },
+    {
+        "model": "app.PatchNote",
+        "pk": 2,
+        "fields": {
+            "versao": "v1.02.01",
+            "data": "2024-02-29",
+            "link": "https://www.bandainamcoent.com/news/tekken-8-patch-notes-v1-02-01"
+        }
+    },
+    {
+        "model": "app.PatchNote",
+        "pk": 3,
+        "fields": {
+            "versao": "v1.03.01",
+            "data": "2024-03-29",
+            "link": "https://www.bandainamcoent.com/news/tekken-8-patch-notes-v1-03-01"
+        }
+    },
+    {
+        "model": "app.PatchNote",
+        "pk": 4,
+        "fields": {
+            "versao": "v1.03.02",
+            "data": "2024-04-11",
+            "link": "https://www.bandainamcoent.com/news/tekken-8-patch-notes-v1-03-02"
+        }
+    },
+    {
+        "model": "app.PatchNote",
+        "pk": 5,
+        "fields": {
+            "versao": "v1.04",
+            "data": "2024-05-01",
+            "link": "https://www.bandainamcoent.com/news/tekken-8-patch-notes-v1-04"
+        }
+    },
+    {
+        "model": "app.PatchNote",
+        "pk": 6,
+        "fields": {
+            "versao": "v1.05",
+            "data": "2024-06-10",
+            "link": "https://www.bandainamcoent.com/news/tekken-8-patch-notes-v1-05"
+        }
+    },
+    {
+        "model": "app.PatchNote",
+        "pk": 7,
+        "fields": {
+            "versao": "v1.06.01",
+            "data": "2024-07-23",
+            "link": "https://www.bandainamcoent.com/news/tekken-8-patch-notes-v1-06-01"
+        }
+    },
+    {
+        "model": "app.PatchNote",
+        "pk": 8,
+        "fields": {
+            "versao": "v1.06.02",
+            "data": "2024-08-06",
+            "link": "https://www.bandainamcoent.com/news/tekken-8-patch-notes-v1-06-02"
+        }
+    }
+]

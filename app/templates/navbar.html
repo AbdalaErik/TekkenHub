@@ -1,6 +1,6 @@
 {% load static %}
 <link rel="stylesheet" href="{% static 'css/navbar.css' %}"/>
-<nav class="navbar navbar-expand-lg navbar-dark navbar-color">
+<nav class="navbar navbar-expand-lg navbar-dark navbar-color {% if request.path == '/sobre/' %}custom-navbar-color{% endif %}">
     <div class="container dynamic-container">
         <!-- Logo -->
         <a class="navbar-brand fs-4"><img src="{% static 'img/t8logo.png' %}" alt="Tekken 8 Logo" width="40" height="40"></a>
@@ -31,19 +31,19 @@
                         <a class="nav-link active" aria-current="page" href="#">Home</a>
                     </li> -->
                     <li class="nav-item mx-2">
-                        <a class="nav-link" href="{% url 'personagemList' %}">Personagens</a>
+                        <a class="nav-link {% if request.path == '/personagens/' %}active{% endif %}" href="{% url 'personagemList' %}">Personagens</a>
                     </li>
                     <li class="nav-item mx-2">
-                        <a class="nav-link" href="{% url 'mapas' %}">Mapas</a>
+                        <a class="nav-link {% if request.path == '/mapas/' %}active{% endif %}" href="{% url 'mapas' %}">Mapas</a>
                     </li>
                     <li class="nav-item mx-2">
-                        <a class="nav-link" href="{% url 'mecanicas' %}">Mecânicas</a>
+                        <a class="nav-link {% if request.path == '/mecanicas/' %}active{% endif %}" href="{% url 'mecanicas' %}">Mecânicas</a>
                     </li>
                     <li class="nav-item mx-2">
-                        <a class="nav-link" href="{% url 'terminologia' %}">Terminologia</a>
+                        <a class="nav-link {% if request.path == '/glossario/' %}active{% endif %}" href="{% url 'glossario' %}">Glossário</a>
                     </li>
                     <li class="nav-item mx-2">
-                        <a class="nav-link" href="{% url 'patch_notes' %}">Patch Notes</a>
+                        <a class="nav-link {% if request.path == '/patch_notes/' %}active{% endif %}" href="{% url 'patch_notes' %}">Patch Notes</a>
                     </li>
                 </ul>
                 <!-- About -->

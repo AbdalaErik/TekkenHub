@@ -3,6 +3,8 @@ from django.contrib.postgres.fields import ArrayField
 
 # Create your models here.
 
+from datetime import date
+
 class Personagem(models.Model):
 
     nome = models.CharField(max_length=80, verbose_name="Nome")
@@ -48,7 +50,6 @@ class Mecanica(models.Model):
 class Golpe(models.Model):
 
     nome = models.CharField(max_length=80, verbose_name="Nome")
-    notacao = models.CharField(max_length=100, verbose_name="Notação")
     estrutura = ArrayField(models.CharField(max_length=300), verbose_name="Estrutura")
     dano = models.PositiveIntegerField(verbose_name="Dano")
     frame_start = models.IntegerField(verbose_name="Frames de início")
@@ -129,7 +130,8 @@ class Mapa(models.Model):
     
 class PatchNote(models.Model):
 
-    titulo = models.CharField(max_length=80, verbose_name="Título")
+    versao = models.CharField(max_length=80, verbose_name="Versão", default="Teste")
+    data = models.DateField(verbose_name="Data", default=date.today)
     link = models.CharField(max_length=300, verbose_name="Link")
 
     class Meta:
@@ -137,4 +139,4 @@ class PatchNote(models.Model):
         verbose_name_plural = "Patch notes"
 
     def __str__(self):
-        return f'{self.titulo}'
+        return f'{self.versao}'

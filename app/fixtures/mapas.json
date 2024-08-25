@@ -1,47 +1,56 @@
 [
-  {
-    "model": "app.Mapa",
-    "pk": 1,
-    "fields": {
-      "nome": "Yakushima",
-      "imagem": "https://www.reddit.com/media?url=https%3A%2F%2Fpreview.redd.it%2Fnew-tekken-8-stage-preview-images-available-during-cnt-v0-qsdml4ec905b1.jpg%3Fwidth%3D1920%26format%3Dpjpg%26auto%3Dwebp%26s%3Dea9d19c9371caa9245bc6e277afcedd09f87ca55",
-      "mecanicas": [1,2]
+    {
+        "model": "app.Mapa",
+        "pk": 1,
+        "fields": {
+            "nome": "Arena",
+            "imagem": "../static/img/stages/arena.jpg",
+            "mecanicas": [1]
+        }
+    },
+    {
+        "model": "app.Mapa",
+        "pk": 2,
+        "fields": {
+            "nome": "Arena (Underground)",
+            "imagem": "../static/img/stages/arena-underground.jpg",
+            "mecanicas": [1,6]
+        }
+    },
+    {
+        "model": "app.Mapa",
+        "pk": 3,
+        "fields": {
+            "nome": "Rebel Hangar",
+            "imagem": "../static/img/stages/rebel-hangar.jpg",
+            "mecanicas": [1,5,7]
+        }
+    },
+    {
+        "model": "app.Mapa",
+        "pk": 4,
+        "fields": {
+            "nome": "Sanctum",
+            "imagem": "../static/img/stages/sanctum.jpg",
+            "mecanicas": [1,3]
+        }
+    },
+    {
+        "model": "app.Mapa",
+        "pk": 5,
+        "fields": {
+            "nome": "Ortiz Farm",
+            "imagem": "../static/img/stages/ortiz-farm.jpg",
+            "mecanicas": [1,4,5,6]
+        }
+    },
+    {
+        "model": "app.Mapa",
+        "pk": 6,
+        "fields": {
+            "nome": "Elegant Place",
+            "imagem": "../static/img/stages/elegant-place.jpg",
+            "mecanicas": [1,3,5,6]
+        }
     }
-  },
-  {
-    "model": "app.Mapa",
-    "pk": 2,
-    "fields": {
-      "nome": "Union Square",
-      "imagem": "https://www.reddit.com/media?url=https%3A%2F%2Fpreview.redd.it%2Fnew-tekken-8-stage-preview-images-available-during-cnt-v0-xvadd4ec905b1.jpg%3Fwidth%3D1080%26crop%3Dsmart%26auto%3Dwebp%26s%3Da145d6fa54662e30bf9de0253f72ac2463d7361d",
-      "mecanicas": [2,2]
-    }
-  },
-  {
-    "model": "app.Mapa",
-    "pk": 3,
-    "fields": {
-      "nome": "Rebel Hangar",
-      "imagem": "https://www.reddit.com/media?url=https%3A%2F%2Fpreview.redd.it%2Fnew-tekken-8-stage-preview-images-available-during-cnt-v0-m03j34ec905b1.jpg%3Fwidth%3D1920%26format%3Dpjpg%26auto%3Dwebp%26s%3Dfd5c91c29bd93152cd303ec7f61aeac141ddf8a5",
-      "mecanicas": [2,2]
-    }
-  },
-  {
-    "model": "app.Mapa",
-    "pk": 4,
-    "fields": {
-      "nome": "Sanctum",
-      "imagem": "https://www.reddit.com/media?url=https%3A%2F%2Fpreview.redd.it%2Fnew-tekken-8-stage-preview-images-available-during-cnt-v0-fgj9h4ec905b1.jpg%3Fwidth%3D1920%26format%3Dpjpg%26auto%3Dwebp%26s%3D48fa1db290e9ec96bba25406c939c56685504e08",
-      "mecanicas": [2,2]
-    }
-  },
-  {
-    "model": "app.Mapa",
-    "pk": 5,
-    "fields": {
-      "nome": "Arena",
-      "imagem": "https://www.reddit.com/media?url=https%3A%2F%2Fpreview.redd.it%2Fnew-tekken-8-stage-preview-images-available-during-cnt-v0-e0zs34ec905b1.jpg%3Fwidth%3D1920%26format%3Dpjpg%26auto%3Dwebp%26s%3Df5ad60ea324be9b73f711dd51f09c3cd87778392",
-      "mecanicas": [2,2]
-    }
-  }
 ]

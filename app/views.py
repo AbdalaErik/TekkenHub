@@ -37,7 +37,7 @@ class MecanicaView(View):
 class TermoView(View):
 
     def get(self, request, *args, **kwargs):
-        termos = Termo.objects.all()
+        termos = Termo.objects.all().order_by("nome")
         return render(request, 'termos.html', {'termos':termos})
     
 class MapaView(View):
@@ -49,7 +49,7 @@ class MapaView(View):
 class PatchNoteView(View):
 
     def get(self, request, *args, **kwargs):
-        patch_notes = PatchNote.objects.all()
+        patch_notes = PatchNote.objects.all().order_by("-id")
         return render(request, 'patch_notes.html', {'patch_notes':patch_notes})
     
 class SobreView(View):
