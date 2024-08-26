@@ -12,7 +12,6 @@ class Personagem(models.Model):
     titulo = models.CharField(max_length=80, verbose_name="Título")
     estilo = models.CharField(max_length=80, verbose_name="Estilo de luta")
     pais = models.CharField(max_length=40, verbose_name="País")
-    chart = models.CharField(max_length=300, verbose_name="Chart")
     dlc = models.BooleanField(verbose_name="É DLC?")
 
     class Meta:
@@ -77,7 +76,6 @@ class DificuldadeCombo(models.Model):
     
 class Combo(models.Model):
 
-    notacao = models.CharField(max_length=100, verbose_name="Notação")
     imagem = models.CharField(max_length=300, verbose_name="Imagem")
     dano = models.PositiveIntegerField(verbose_name="Dano")
     dificuldade = models.ForeignKey(DificuldadeCombo, on_delete=models.CASCADE, verbose_name="Dificuldade")
@@ -93,7 +91,7 @@ class Combo(models.Model):
 class JogadorProfissional(models.Model):
 
     nome = models.CharField(max_length=80, verbose_name="Nome")
-    youtube = models.CharField(max_length=300, verbose_name="Nome")
+    youtube = models.CharField(max_length=300, verbose_name="Youtube")
     personagem = models.ForeignKey(Personagem, on_delete=models.CASCADE, verbose_name="Personagem")
 
     class Meta:

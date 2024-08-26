@@ -5,10 +5,9 @@
         "fields": {
             "nome": "Jin Kazama",
             "imagem": "https://media.graphassets.com/kt0c29OnS1iid1N0bisb",
-            "titulo": "Teste",
-            "estilo": "teste",
-            "pais": "teste123",
-            "chart": "teste123",
+            "titulo": "Relâmpago do Destino",
+            "estilo": "Karatê",
+            "pais": "Japão",
             "dlc": false
         }
     },
@@ -18,11 +17,394 @@
         "fields": {
             "nome": "Kazuya Mishima",
             "imagem": "https://media.graphassets.com/pV8nXDdUSoWz68S6bemw",
-            "titulo": "Teste",
-            "estilo": "teste",
-            "pais": "teste123",
-            "chart": "teste123",
+            "titulo": "Opressor de Sangue Frio",
+            "estilo": "Karatê Estilo Mishima",
+            "pais": "Japão",
             "dlc": false
+        }
+    },
+    {
+        "model": "app.Personagem",
+        "pk": 3,
+        "fields": {
+            "nome": "King",
+            "imagem": "https://media.graphassets.com/iVK63XMTjK3K5T3e52lY",
+            "titulo": "Ira da Besta",
+            "estilo": "Luta Livre Profissional",
+            "pais": "México",
+            "dlc": false
+        }
+    },
+    {
+        "model": "app.Personagem",
+        "pk": 4,
+        "fields": {
+            "nome": "Jun Kazama",
+            "imagem": "https://media.graphassets.com/XohzPbSkQ4W7dkQzG1wu",
+            "titulo": "Luz da Esperança",
+            "estilo": "Artes Marciais Estilo Kazama",
+            "pais": "Japão",
+            "dlc": false
+        }
+    },
+    {
+        "model": "app.Personagem",
+        "pk": 5,
+        "fields": {
+            "nome": "Paul Phoenix",
+            "imagem": "https://media.graphassets.com/jFraU196QSKa0Hx15FuQ",
+            "titulo": "Destruidor de Sangue Quente",
+            "estilo": "Judô",
+            "pais": "EUA",
+            "dlc": false
+        }
+    },
+    {
+        "model": "app.Personagem",
+        "pk": 6,
+        "fields": {
+            "nome": "Marshall Law",
+            "imagem": "https://media.graphassets.com/Mcg5oL77SCCLR3juLgPi",
+            "titulo": "O Dragão Lendário",
+            "estilo": "Artes Marciais",
+            "pais": "EUA",
+            "dlc": false
+        }
+    },
+    {
+        "model": "app.Personagem",
+        "pk": 7,
+        "fields": {
+            "nome": "Jack-8",
+            "imagem": "https://media.graphassets.com/Rodg9YbSlmIO4CP1KeTg",
+            "titulo": "Aniquilador de Alta Tecnologia",
+            "estilo": "Força Bruta",
+            "pais": "Desconhecido",
+            "dlc": false
+        }
+    },
+    {
+        "model": "app.Personagem",
+        "pk": 8,
+        "fields": {
+            "nome": "Lars Alexandersson",
+            "imagem": "https://media.graphassets.com/fTGf8rOTRCO3w8rFWhFV",
+            "titulo": "O Leão da Rebelião",
+            "estilo": "Artes Marciais da Força Tekken",
+            "pais": "Suécia",
+            "dlc": false
+        }
+    },
+    {
+        "model": "app.Personagem",
+        "pk": 9,
+        "fields": {
+            "nome": "Ling Xiaoyu",
+            "imagem": "https://media.graphassets.com/WxAijbDQ7KVDxNDBZpwL",
+            "titulo": "Fênix Dançarina",
+            "estilo": "Baguazhang",
+            "pais": "China",
+            "dlc": false
+        }
+    },
+    {
+        "model": "app.Personagem",
+        "pk": 10,
+        "fields": {
+            "nome": "Nina Williams",
+            "imagem": "https://media.graphassets.com/RUPIEe6S62DOZhL0HtZR",
+            "titulo": "Assassina Silenciosa",
+            "estilo": "Artes Assassinas",
+            "pais": "Irlanda",
+            "dlc": false
+        }
+    },
+    {
+        "model": "app.Personagem",
+        "pk": 11,
+        "fields": {
+            "nome": "Leroy Smith",
+            "imagem": "https://media.graphassets.com/bsJ99GF3SrKjxgJbuOZZ",
+            "titulo": "Grão-Mestre da Atitude",
+            "estilo": "Wing Chun",
+            "pais": "EUA",
+            "dlc": false
+        }
+    },
+    {
+        "model": "app.Personagem",
+        "pk": 12,
+        "fields": {
+            "nome": "Asuka Kazama",
+            "imagem": "https://media.graphassets.com/XyRGVvTQ9ukJ5Y95xqbO",
+            "titulo": "Pacificadora Espirituosa",
+            "estilo": "Artes Marciais Estilo Kazama",
+            "pais": "EUA",
+            "dlc": false
+        }
+    },
+    {
+        "model": "app.Personagem",
+        "pk": 13,
+        "fields": {
+            "nome": "Lili",
+            "imagem": "https://media.graphassets.com/jN9FfeNtTImrl6KCKVFP",
+            "titulo": "Herdeira de Luta",
+            "estilo": "Estilo Autodidata",
+            "pais": "Mônaco",
+            "dlc": false
+        }
+    },
+    {
+        "model": "app.Personagem",
+        "pk": 14,
+        "fields": {
+            "nome": "Bryan Fury",
+            "imagem": "https://media.graphassets.com/myEvBeMPQj6Tjz6jfJyK",
+            "titulo": "Arauto do Caos",
+            "estilo": "Kickboxing",
+            "pais": "EUA",
+            "dlc": false
+        }
+    },
+    {
+        "model": "app.Personagem",
+        "pk": 15,
+        "fields": {
+            "nome": "Hwoarang",
+            "imagem": "https://media.graphassets.com/nzpfPA1RvyEccxtIKpPa",
+            "titulo": "Garra Sangrenta",
+            "estilo": "Taekwondo",
+            "pais": "Coreia do Sul",
+            "dlc": false
+        }
+    },
+    {
+        "model": "app.Personagem",
+        "pk": 16,
+        "fields": {
+            "nome": "Claudio Serafino",
+            "imagem": "https://media.graphassets.com/RoIFxOavSXCvSS4Di9dP",
+            "titulo": "Exorcista de Demônios",
+            "estilo": "Artes Exorcistas da Sirius",
+            "pais": "Itália",
+            "dlc": false
+        }
+    },
+    {
+        "model": "app.Personagem",
+        "pk": 17,
+        "fields": {
+            "nome": "Azucena Ortiz",
+            "imagem": "https://media.graphassets.com/mBJkCIG0RVOxL8lmv3Mi",
+            "titulo": "Blend Perfeito",
+            "estilo": "Artes Marciais Mistas",
+            "pais": "Peru",
+            "dlc": false
+        }
+    },
+    {
+        "model": "app.Personagem",
+        "pk": 18,
+        "fields": {
+            "nome": "Raven",
+            "imagem": "https://media.graphassets.com/mIWLNmS3Q2miKhM7PtFi",
+            "titulo": "Agente das Sombras",
+            "estilo": "Ninjitsu",
+            "pais": "Desconhecido",
+            "dlc": false
+        }
+    },
+    {
+        "model": "app.Personagem",
+        "pk": 19,
+        "fields": {
+            "nome": "Leo",
+            "imagem": "https://media.graphassets.com/2BaYR8uCQvSithxYF5P0",
+            "titulo": "Caçador da Verdade",
+            "estilo": "Bajiquan",
+            "pais": "Alemanha",
+            "dlc": false
+        }
+    },
+    {
+        "model": "app.Personagem",
+        "pk": 20,
+        "fields": {
+            "nome": "Steve Fox",
+            "imagem": "https://media.graphassets.com/QjPRi5AqScqdTtgiRir1",
+            "titulo": "Paragon do Contragolpe",
+            "estilo": "Boxe",
+            "pais": "Reino Unido",
+            "dlc": false
+        }
+    },
+    {
+        "model": "app.Personagem",
+        "pk": 21,
+        "fields": {
+            "nome": "Kuma",
+            "imagem": "https://media.graphassets.com/DQZlHtATzmHkdvFH1kQT",
+            "titulo": "Mestre do Salmão",
+            "estilo": "Kuma Shin Ken",
+            "pais": "Nenhum",
+            "dlc": false
+        }
+    },
+    {
+        "model": "app.Personagem",
+        "pk": 22,
+        "fields": {
+            "nome": "Yoshimitsu",
+            "imagem": "https://media.graphassets.com/5BbhMGqJTpWd9X0iWlRM",
+            "titulo": "Ninja Espacial Mecanizado",
+            "estilo": "Manji Ninjutsu",
+            "pais": "Japão",
+            "dlc": false
+        }
+    },
+    {
+        "model": "app.Personagem",
+        "pk": 23,
+        "fields": {
+            "nome": "Shaheen",
+            "imagem": "https://media.graphassets.com/hZD62RjSG2QuRblpVv2U",
+            "titulo": "Falcão do Deserto",
+            "estilo": "Combate de Curta Distância",
+            "pais": "Arábia Saudita",
+            "dlc": false
+        }
+    },
+    {
+        "model": "app.Personagem",
+        "pk": 24,
+        "fields": {
+            "nome": "Sergei Dragunov",
+            "imagem": "https://media.graphassets.com/uhCgU9xASsGXdIa4Fs5v",
+            "titulo": "Ceifador Branco",
+            "estilo": "Sambo",
+            "pais": "Rússia",
+            "dlc": false
+        }
+    },
+    {
+        "model": "app.Personagem",
+        "pk": 25,
+        "fields": {
+            "nome": "Feng Wei",
+            "imagem": "https://media.graphassets.com/dY0iy6kERPOAFTHDq86l",
+            "titulo": "Punho Divino",
+            "estilo": "Taijiquan",
+            "pais": "China",
+            "dlc": false
+        }
+    },
+    {
+        "model": "app.Personagem",
+        "pk": 26,
+        "fields": {
+            "nome": "Panda",
+            "imagem": "https://media.graphassets.com/aAQZEaSWRSOkiWYOjkuu",
+            "titulo": "Linda Protetora",
+            "estilo": "Kuma Shin Ken",
+            "pais": "Nenhum",
+            "dlc": false
+        }
+    },
+    {
+        "model": "app.Personagem",
+        "pk": 27,
+        "fields": {
+            "nome": "Lee Chaolan",
+            "imagem": "https://media.graphassets.com/pjxhYoUYTeuY3HsNeKUv",
+            "titulo": "Demônio de Cabelos Prateados",
+            "estilo": "Artes Marciais",
+            "pais": "Japão",
+            "dlc": false
+        }
+    },
+    {
+        "model": "app.Personagem",
+        "pk": 28,
+        "fields": {
+            "nome": "Alisa Bosconovitch",
+            "imagem": "https://media.graphassets.com/n1vLUNXRtGCcmIEOwRaj",
+            "titulo": "Automata Destruidora",
+            "estilo": "Combate de Alta Mobilidade",
+            "pais": "Rússia",
+            "dlc": false
+        }
+    },
+    {
+        "model": "app.Personagem",
+        "pk": 29,
+        "fields": {
+            "nome": "Zafina",
+            "imagem": "https://media.graphassets.com/OYb6gBOIQS1Siq7S3EXg",
+            "titulo": "Observadora de Estrelas Mística",
+            "estilo": "Artes Antigas do Assassinato",
+            "pais": "Desconhecido",
+            "dlc": false
+        }
+    },
+    {
+        "model": "app.Personagem",
+        "pk": 30,
+        "fields": {
+            "nome": "Devil Jin",
+            "imagem": "https://media.graphassets.com/GZjABzq6RtqGnDKJWArQ",
+            "titulo": "Asas Negras da Ruína",
+            "estilo": "Desconhecido",
+            "pais": "Nenhum",
+            "dlc": false
+        }
+    },
+    {
+        "model": "app.Personagem",
+        "pk": 31,
+        "fields": {
+            "nome": "Victor Chevalier",
+            "imagem": "https://media.graphassets.com/7Gqj11TDRfifrtFKiQiw",
+            "titulo": "Violência Refinada",
+            "estilo": "Super Espião CQB",
+            "pais": "França",
+            "dlc": false
+        }
+    },
+    {
+        "model": "app.Personagem",
+        "pk": 32,
+        "fields": {
+            "nome": "Reina",
+            "imagem": "https://media.graphassets.com/VkSV6lkgSqeDOm5L0msl",
+            "titulo": "Raio Roxo",
+            "estilo": "Desconhecido",
+            "pais": "Desconhecido",
+            "dlc": false
+        }
+    },
+    {
+        "model": "app.Personagem",
+        "pk": 33,
+        "fields": {
+            "nome": "Eddy Gordo",
+            "imagem": "https://media.graphassets.com/z01aoZ7RACKF80qOIDAw",
+            "titulo": "Clarão Indomável",
+            "estilo": "Capoeira",
+            "pais": "Brasil",
+            "dlc": true
+        }
+    },
+    {
+        "model": "app.Personagem",
+        "pk": 34,
+        "fields": {
+            "nome": "Lidia",
+            "imagem": "https://media.graphassets.com/3vEPjsH3R4u3DI4s20tA",
+            "titulo": "A Guerreira Primeira Ministra",
+            "estilo": "Karatê Tradicional",
+            "pais": "Polônia",
+            "dlc": true
         }
     }
 ]

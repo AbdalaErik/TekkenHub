@@ -18,6 +18,9 @@ class PersonagemListView(ListView):
     context_object_name = "lista"
     template_name = "personagens/lista.html"
 
+    def get_queryset(self):
+        return Personagem.objects.all().order_by('id')
+
 class PersonagemDetailView(DetailView):
 
     model = Personagem

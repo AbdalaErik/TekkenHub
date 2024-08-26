@@ -1,0 +1,23 @@
+[
+    {
+        "model": "app.DificuldadeCombo",
+        "pk": 1,
+        "fields": {
+            "nome": "Iniciante"
+        }
+    },
+    {
+        "model": "app.DificuldadeCombo",
+        "pk": 2,
+        "fields": {
+            "nome": "Intermediário"
+        }
+    },
+    {
+        "model": "app.DificuldadeCombo",
+        "pk": 3,
+        "fields": {
+            "nome": "Avançado"
+        }
+    }
+]

@@ -20,16 +20,10 @@
                     {% for personagem in lista %}
                     <div class="mapa-section">
                         <div class="img-details">
-                            <img src="{{personagem.imagem}}" alt="Map" width="100px" height="145px">
+                            <a href="{% url 'personagemDetail' personagem.pk %}">
+                                <img src="{{personagem.imagem}}" alt="Map" width="100px" height="145px">
+                            </a>
                         </div>
-                        <!-- <div class="mapa-details">
-                            <h3 class="title">{{personagem.nome}}</h3>
-                            <div style="text-align: center;">
-                                {% for mecanica in Mapa.mecanicas.all %}
-                                    <img src="{{ mecanica.imagem }}" alt="{{ mecanica.nome }}" width="35px">
-                                {% endfor %}
-                            </div>
-                        </div> -->
                     </div>
                     {% endfor %} 
                 </div>
