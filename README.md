@@ -4,8 +4,8 @@
 
 ## Preview
 
-![Preview da tela inicial](app\static\img\preview-inicial.png)
-![Preview da tela "Personagens"](app\static\img\preview-personagens.png)
+![Preview da tela inicial](https://raw.githubusercontent.com/AbdalaErik/TekkenHub/main/app/static/img/preview-inicial.png)
+![Preview da tela "Personagens"](https://raw.githubusercontent.com/AbdalaErik/TekkenHub/main/app/static/img/preview-personagens.png)
 
 ## Tecnologias utilizadas:
 
