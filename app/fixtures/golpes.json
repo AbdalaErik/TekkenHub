@@ -1,0 +1,88 @@
+[
+    {
+        "model": "app.Golpe",
+        "pk": 1,
+        "fields": {
+            "nome": "Electric Wind Hook Fist (Simultâneo)",
+            "estrutura": [
+                "https://tekken.guru/assets/inputs/directions/f.svg", 
+                "https://tekken.guru/assets/inputs/directions/n.svg",
+                "https://tekken.guru/assets/inputs/directions/d.svg",
+                "https://tekken.guru/assets/inputs/directions/df.svg",
+                "https://tekken.guru/assets/inputs/buttons/ps4/2.svg"
+            ],
+            "dano": 25,
+            "frame_start": 14,
+            "frame_block": 5,
+            "mecanicas": [9],
+            "personagem": 1
+        }
+    },
+    {
+        "model": "app.Golpe",
+        "pk": 2,
+        "fields": {
+            "nome": "Demon's Paw",
+            "estrutura": [
+                "https://tekken.guru/assets/inputs/directions/f.svg", 
+                "https://tekken.guru/assets/inputs/directions/fp.svg",
+                "https://tekken.guru/assets/inputs/buttons/ps4/2.svg"
+            ],
+            "dano": 24,
+            "frame_start": 14,
+            "frame_block": -8,
+            "mecanicas": [10],
+            "personagem": 1
+        }
+    },
+    {
+        "model": "app.Golpe",
+        "pk": 3,
+        "fields": {
+            "nome": "Left Right Axe Kick",
+            "estrutura": [
+                "https://tekken.guru/assets/inputs/buttons/ps4/1.svg", 
+                "https://tekken.guru/assets/inputs/buttons/ps4/2.svg",
+                "https://tekken.guru/assets/inputs/buttons/ps4/3.svg"
+            ],
+            "dano": 45,
+            "frame_start": 10,
+            "frame_block": -4,
+            "mecanicas": [],
+            "personagem": 1
+        }
+    },
+    {
+        "model": "app.Golpe",
+        "pk": 4,
+        "fields": {
+            "nome": "Mid Left Punch to High Roundhouse Kick",
+            "estrutura": [
+                "https://tekken.guru/assets/inputs/directions/df.svg", 
+                "https://tekken.guru/assets/inputs/buttons/ps4/1.svg",
+                "https://tekken.guru/assets/inputs/buttons/ps4/4.svg"
+            ],
+            "dano": 28,
+            "frame_start": 13,
+            "frame_block": -9,
+            "mecanicas": [9],
+            "personagem": 1
+        }
+    },
+    {
+        "model": "app.Golpe",
+        "pk": 5,
+        "fields": {
+            "nome": "Double Lift Kick",
+            "estrutura": [
+                "https://tekken.guru/assets/inputs/directions/d.svg", 
+                "https://tekken.guru/assets/inputs/buttons/ps4/3+4.svg"
+            ],
+            "dano": 25,
+            "frame_start": 15,
+            "frame_block": -19,
+            "mecanicas": [],
+            "personagem": 1
+        }
+    }
+]

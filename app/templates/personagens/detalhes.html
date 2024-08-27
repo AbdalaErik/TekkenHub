@@ -23,12 +23,17 @@
                     <div class="character-summary">
                         <h2>{{ detalhes.nome }}</h2>
                         <h3 style="margin-top: 5px;">{{ detalhes.titulo }}</h3>
-                        <h5 style="margin-top: 10px;">{{ detalhes.estilo }} | {{ detalhes.pais }}</h5>
-                        {% if detalhes.dlc == True %}
-                            <h5 style="margin-top: 10px;">DLC</h5>
-                        {% else %}
-                            <h5 style="margin-top: 10px;">Jogo Base</h5>
-                        {% endif %}
+                        <div>
+                            <div class="character-info">
+                                <h5 style="margin-right: 10px; margin-bottom: 10px !important;"><span style="color: #ed1665;">Estilo:</span> {{ detalhes.estilo }}</h5>
+                                <h5 style="margin-bottom: 10px !important;"><span style="color: #ed1665;">País:</span> {{ detalhes.pais }}</h5>
+                            </div>
+                            <h5>
+                                <span style="color: #ed1665;">Tipo:</span>
+                                {% if detalhes.dlc == True %} DLC {% else %} Jogo Base {% endif %}
+                            </h5>
+                            
+                        </div>
                         <div class="players-section">
                             {% for jogador in detalhes.jogadorprofissional_set.all %}
                                 <div class="{% if not forloop.last %}m-r-md{% endif %}" style="font-size: 20px;">
@@ -41,17 +46,48 @@
                     </div>
                 </div>
                 <div class="golpes-section">
+                    <h2 style="align-self: center; margin-bottom: 10px;">GOLPES</h2>
                     {% for golpe in detalhes.golpe_set.all %}
-                        {% for item in golpe.estrutura %}
-                            <img src="{{ item }}" width="100px">
-                        {% endfor %}
+                    <div class="golpe-card">
+                        <div class="golpe-summary">
+                            <h5 style="font-size: x-large;">{{ forloop.counter }}. {{ golpe.nome }}</h5>
+                            <div>
+                                {% for item in golpe.estrutura %}
+                                    <img src="{{ item }}" width="60px">
+                                {% endfor %}
+                            </div>
+                        </div>
+                        <div class="golpe-info">
+                            <div class="gople-mecanicas">
+                                {% for item in golpe.mecanicas.all %}
+                                    <img src="../{{ item.imagem }}" width="30px" class="{% if not forloop.last %}m-r-md{% endif %}">
+                                {% endfor %}
+                            </div>
+                            <h5 style="margin-bottom: 5px !important; font-size: 16px;">
+                                <span style="color: #ed1665;">Start:</span> {{ golpe.frame_start }}
+                            </h5>
+                            <h5 style="margin-bottom: 5px !important; font-size: 16px;">
+                                <span style="color: #ed1665;">Block:</span> {{ golpe.frame_block }}
+                            </h5>
+                            <h5 style="margin-bottom: 0px !important; font-size: 16px;">
+                                <span style="color: #ed1665;">Dano:</span> {{ golpe.dano }}
+                            </h5>
+                        </div>
+                    </div>
                     {% endfor %}
                 </div>
                 <div class="golpes-section">
-                    {% for golpe in detalhes.golpe_set.all %}
-                        {% for item in golpe.estrutura %}
-                            <img src="{{ item }}" width="100px">
-                        {% endfor %}
+                    <h2 style="align-self: center; margin-bottom: 10px;">COMBOS</h2>
+                    <!-- for combo in detalhes.combo_set.all -->
+                    {% for combo in combos %}
+                    <div class="golpe-card">
+                        <div class="golpe-summary">
+                            <h5 style="font-size: x-large;">{{ forloop.counter }}. {{ combo.dificuldade }} - Dano: {{ combo.dano }}</h5>
+                            <div>
+                                <img src="{{ combo.imagem }}" width="95%">
+                            </div>
+                        </div>
+                    </div>
                     {% endfor %}
                 </div>
             </section>

@@ -29,6 +29,9 @@ class PersonagemDetailView(DetailView):
 
     def get_context_data(self, **kwargs: Any) -> dict[str, Any]:
         context = super().get_context_data(**kwargs)
+        personagem = self.object # 1
+        combos = Combo.objects.filter(personagem=personagem).order_by('dificuldade') # 2
+        context['combos'] = combos # 3
         return context
     
 class MecanicaView(View):
@@ -46,7 +49,7 @@ class TermoView(View):
 class MapaView(View):
 
     def get(self, request, *args, **kwargs):
-        mapas = Mapa.objects.all()
+        mapas = Mapa.objects.all().order_by("nome")
         return render(request, 'mapas.html', {'mapas':mapas})
     
 class PatchNoteView(View):

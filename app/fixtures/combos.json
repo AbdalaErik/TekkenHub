@@ -1,0 +1,52 @@
+[
+    {
+        "model": "app.Combo",
+        "pk": 1,
+        "fields": {
+            "imagem": "../../static/img/combos/iniciante.png",
+            "dano": 66,
+            "dificuldade": 1,
+            "personagem": 1
+        }
+    },
+    {
+        "model": "app.Combo",
+        "pk": 2,
+        "fields": {
+            "imagem": "../../static/img/combos/iniciante2.png",
+            "dano": 70,
+            "dificuldade": 1,
+            "personagem": 1
+        }
+    },
+    {
+        "model": "app.Combo",
+        "pk": 3,
+        "fields": {
+            "imagem": "../../static/img/combos/intermediario.png",
+            "dano": 72,
+            "dificuldade": 2,
+            "personagem": 1
+        }
+    },
+    {
+        "model": "app.Combo",
+        "pk": 4,
+        "fields": {
+            "imagem": "../../static/img/combos/intermediario2.png",
+            "dano": 72,
+            "dificuldade": 2,
+            "personagem": 1
+        }
+    },
+    {
+        "model": "app.Combo",
+        "pk": 5,
+        "fields": {
+            "imagem": "../../static/img/combos/avancado.png",
+            "dano": 76,
+            "dificuldade": 3,
+            "personagem": 1
+        }
+    }
+]

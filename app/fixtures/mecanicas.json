@@ -78,5 +78,25 @@
             "descricao": "Mapas em que é possível fazer com que o oponente seja ricocheteado ao atingir o chão, causando dano adicional com uma explosão.",
             "tipo_de_mecanica": 2
         }
+    },
+    {
+        "model": "app.Mecanica",
+        "pk": 9,
+        "fields": {
+            "nome": "Tornado",
+            "imagem": "../static/img/mechanics/tornado.png",
+            "descricao": "Investida que arremesa girando o oponente para frente, servindo como extensão e/ou finalização para um combo.",
+            "tipo_de_mecanica": 3
+        }
+    },
+    {
+        "model": "app.Mecanica",
+        "pk": 10,
+        "fields": {
+            "nome": "Heat Engager",
+            "imagem": "../static/img/mechanics/heat-engager.png",
+            "descricao": "Golpe que, ao acertar, permite que o personagem entre no modo Heat e realize um dash para frente.",
+            "tipo_de_mecanica": 3
+        }
     }
 ]

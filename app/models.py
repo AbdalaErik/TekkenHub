@@ -53,7 +53,7 @@ class Golpe(models.Model):
     dano = models.PositiveIntegerField(verbose_name="Dano")
     frame_start = models.IntegerField(verbose_name="Frames de início")
     frame_block = models.IntegerField(verbose_name="Frames de bloqueio")
-    mecanicas = models.ManyToManyField(Mecanica, verbose_name="Mecânica")
+    mecanicas = models.ManyToManyField(Mecanica, verbose_name="Mecânica", blank=True)
     personagem = models.ForeignKey(Personagem, on_delete=models.CASCADE, verbose_name="Personagem")
 
     class Meta:
@@ -86,7 +86,7 @@ class Combo(models.Model):
         verbose_name_plural = "Combos"
 
     def __str__(self):
-        return f'{self.notacao}'
+        return f'{self.id}'
     
 class JogadorProfissional(models.Model):
 

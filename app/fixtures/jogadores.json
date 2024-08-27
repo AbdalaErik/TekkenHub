@@ -1,0 +1,20 @@
+[
+    {
+        "model": "app.JogadorProfissional",
+        "pk": 1,
+        "fields": {
+            "nome": "Devilster",
+            "youtube": "https://www.youtube.com/@Devilster",
+            "personagem": 1
+        }
+    },
+    {
+        "model": "app.JogadorProfissional",
+        "pk": 2,
+        "fields": {
+            "nome": "NonStop Kyo",
+            "youtube": "https://www.youtube.com/@nonstopkyo",
+            "personagem": 1
+        }
+    }
+]
